@@ -20,6 +20,12 @@
 - рабочие ассистенты и внутренние инструменты
 - GitHub и документация проектов
 
+## Как смотреть профиль
+
+- [Portfolio Roadmap](docs/portfolio-roadmap.md) — направление развития GitHub под AI automation / integrations.
+- [Telegram Task Assistant Case Study](https://github.com/CheMpoKaRoKee/telegram-task-assistant/blob/master/docs/case-study.md) — пример автоматизации задач через Telegram, Python и NocoDB.
+- [Learning Mentor Case Study](https://github.com/CheMpoKaRoKee/Mentor/blob/main/docs/case-study.md) — пример AI-инструмента в desktop-приложении.
+
 ## Проекты
 
 ### [Telegram Task Assistant](https://github.com/CheMpoKaRoKee/telegram-task-assistant)
