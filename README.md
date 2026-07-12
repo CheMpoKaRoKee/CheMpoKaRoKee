@@ -1,80 +1,91 @@
-# Андрей — AI Automation / API Integrations / Telegram Bots
+# Андрей Скворцов — автоматизация и интеграции
 
-Собираю рабочие автоматизации на Python, Telegram, API, NocoDB, Google Sheets и AI-инструментах.
+Собираю прикладные инструменты на Python, API, Google Sheets, Apps Script и AI-сервисах.
 
-Мой фокус — не код ради кода, а внутренние инструменты, которые убирают ручные действия из рабочих процессов и помогают быстрее работать с задачами, данными и уведомлениями.
+Мой фокус — не код ради кода, а решения, которые сокращают ручную работу: поиск и обработка данных, внутренние интерфейсы, CRM-прототипы, уведомления и автоматизация повторяющихся процессов.
 
-![AI Automation](https://img.shields.io/badge/AI-Automation-blue)
-![API Integrations](https://img.shields.io/badge/API-Integrations-6f42c1)
-![Telegram Bots](https://img.shields.io/badge/Telegram-Bots-26A5E4)
 ![Python](https://img.shields.io/badge/Python-Automation-3776AB)
+![API](https://img.shields.io/badge/API-Integrations-6f42c1)
+![AI](https://img.shields.io/badge/AI-Tools-blue)
+![Google Apps Script](https://img.shields.io/badge/Google-Apps%20Script-34A853)
 
-## Лучшие проекты
+## Основные проекты
 
-### [Telegram Task Assistant](https://github.com/CheMpoKaRoKee/telegram-task-assistant)
+### [DocuFind Local](https://github.com/CheMpoKaRoKee/DocuFind)
 
-Python-бот для управления задачами, напоминаниями и рабочими сценариями через Telegram.
+Windows-приложение для локального индексирования и поиска по файлам без отправки данных во внешние сервисы.
 
-Проект показывает связку:
+Что показывает проект:
 
-- Telegram как интерфейс для команды;
-- Python как слой автоматизации;
-- NocoDB как базу данных и Kanban-доску;
-- REST API для связи между сервисами;
-- Google Sheets / Apps Script как дополнительную интеграцию;
-- VDS и systemd для простого серверного запуска.
+- Python-приложение с desktop-интерфейсом на PySide6;
+- SQLite и FTS5 для полнотекстового поиска;
+- поиск по имени, пути и содержимому файлов;
+- русскую морфологию через `pymorphy3`;
+- fuzzy-поиск по опечаткам через RapidFuzz;
+- фоновые задачи для индексации и поиска;
+- безопасное редактирование с backup и atomic save;
+- unit/integration tests и сборку Windows `.exe` через PyInstaller.
 
-Документация:
+**Стек:** Python, PySide6, SQLite, FTS5, RapidFuzz, pymorphy3, PyInstaller.
 
-- [Case Study](https://github.com/CheMpoKaRoKee/telegram-task-assistant/blob/master/docs/case-study.md)
-- [Architecture Overview](https://github.com/CheMpoKaRoKee/telegram-task-assistant/blob/master/docs/architecture.md)
-- [Development Guide](https://github.com/CheMpoKaRoKee/telegram-task-assistant/blob/master/DEVELOPMENT.md)
+---
+
+### [MiniCRM](https://github.com/CheMpoKaRoKee/MiniCRM)
+
+Тестовое задание: рабочий прототип мини-CRM для юридической команды.
+
+Что реализовано:
+
+- Web App для добавления и ведения клиентов;
+- Google Sheets как база данных;
+- статусы, комментарии и счётчики;
+- журнал действий;
+- email-уведомления;
+- backend-логика на Google Apps Script;
+- простой интерфейс на HTML, CSS и JavaScript.
+
+Проект показывает, как быстро собрать MVP внутреннего инструмента без отдельного сервера и сложной инфраструктуры.
+
+**Стек:** Google Sheets, Google Apps Script, HTML, CSS, JavaScript.
+
+---
 
 ### [Learning Mentor](https://github.com/CheMpoKaRoKee/Mentor)
 
-Desktop-приложение для самостоятельного обучения с AI-наставником.
+Desktop-приложение для самостоятельного изучения разработки с AI-наставником.
 
-Проект показывает:
+Что показывает проект:
 
-- интеграцию с AI API;
-- упаковку AI в понятный пользовательский сценарий;
-- desktop-интерфейс на Electron и React;
-- сохранение прогресса и локальных данных;
-- portable-запуск для Windows.
+- интеграцию с OpenRouter API;
+- AI-генерацию теории и заданий;
+- проверку ответов и контекстный чат;
+- desktop-приложение на Electron и React;
+- локальное сохранение прогресса и настроек;
+- portable-сборку для Windows.
 
-Документация:
+**Стек:** Electron, React, Vite, Tailwind CSS, OpenRouter API, electron-builder.
 
-- [Case Study](https://github.com/CheMpoKaRoKee/Mentor/blob/main/docs/case-study.md)
-- [Development Guide](https://github.com/CheMpoKaRoKee/Mentor/blob/main/DEVELOPMENT.md)
-- [Security Policy](https://github.com/CheMpoKaRoKee/Mentor/blob/main/SECURITY.md)
+## Чем могу быть полезен
 
-## Что я делаю
-
-- Telegram-боты для рабочих процессов;
-- API-интеграции между сервисами;
-- автоматизацию задач, уведомлений и таблиц;
-- AI-помощников для обучения, анализа и операционных задач;
-- документацию проектов так, чтобы внешний человек быстро понял сценарий, запуск и пользу.
+- автоматизация повторяющихся рабочих процессов;
+- интеграции через REST API и webhooks;
+- внутренние инструменты на Python;
+- прототипы на Google Sheets и Apps Script;
+- AI-помощники для обучения, анализа и операционных задач;
+- оформление MVP: документация, тесты, сборка и инструкции по запуску.
 
 ## Стек и инструменты
 
-**Automation / Backend:** Python, FastAPI, REST API, Webhooks, systemd  
-**Bots:** Telegram Bot API, python-telegram-bot  
+**Python / Data:** Python, SQLite, SQL, FTS5, PySide6  
+**Integrations:** REST API, Webhooks, Postman  
+**Automation:** Google Sheets, Google Apps Script, NocoDB  
 **AI:** OpenRouter API, LLM, prompt engineering  
-**Data / No-code:** NocoDB, Google Sheets, Apps Script  
-**Dev tools:** Git, GitHub, Postman, Linux, dotenv, pydantic
+**Desktop / Frontend:** Electron, React, Vite, HTML, CSS, JavaScript  
+**Dev tools:** Git, GitHub, Linux, PyInstaller
 
 ## Бэкграунд
 
-До разработки я работал в клиентском сервисе, поддержке, маркетинге и координации проектов. Этот опыт помогает мне смотреть на автоматизацию не только как на код, а как на способ упростить реальный процесс: убрать ручной перенос данных, сделать понятные статусы, напоминания и единое место для работы с задачами.
-
-## Сейчас развиваю
-
-- AI-интеграции для рабочих процессов;
-- Telegram-интерфейсы для внутренних инструментов;
-- связки NocoDB / Google Sheets / внешние API;
-- проекты, где AI читает данные, вызывает API и формирует отчёты;
-- аккуратную GitHub-документацию для портфолио.
+До разработки я работал в клиентском сервисе, поддержке, маркетинге и координации проектов. Этот опыт помогает мне смотреть на автоматизацию как на улучшение реального процесса: понять, где теряются данные и время, собрать простой рабочий сценарий и сделать его понятным пользователю.
 
 ## Контакты
 
